@@ -17,7 +17,7 @@ body {
   flex-flow: row wrap;
   margin: auto;
   padding: 10px;
-  width: 7 * $day-cell + 26px;
+  width: calc(7 * #{$day-cell} + 26px);
   gap: $gap;
 
   @each $day, $offset in $day-offsets {
